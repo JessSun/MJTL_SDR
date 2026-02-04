@@ -60,7 +60,7 @@ end
     
 %% Acquisition ============================================================
 disp ('Starting acquiring satellites...');
-if ~exist(['acqResults_',settings.fileName,'.mat'])
+if ~exist(['./Result/acqResults_',settings.fileName,'.mat'])
     switch sys
         case 1 
             acqResultsL1 = acquisitionL1(settings);
@@ -117,7 +117,7 @@ end
 %% Track the signal =======================================================
 startTime = now;
 disp (['   Tracking started at ', datestr(startTime)]);
-if (~exist(['trkResults_',settings.fileName,'.mat']))    
+if (~exist(['./Result/trkResults_',settings.fileName,'.mat']))    
     switch sys
         case 1 
             % L1 single-frequency tracking loop
