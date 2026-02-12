@@ -45,12 +45,12 @@ settings.acqThreshold       = 2.5;
 %% Tracking loops settings ================================================
 % Code tracking loop parameters
 settings.dllDampingRatio         = 0.7;
-% settings.dllNoiseBandwidth     = 0.1;       % [Hz]
+% settings.dllNoiseBandwidth     = 0.1;         % [Hz]
 settings.dllNoiseBandwidth       = 1.5;         % [Hz]
 settings.dllCorrelatorSpacing    = 0.5;         % [chips]
 % Carrier tracking loop parameters
 settings.pllDampingRatio         = 0.7;
-% settings.pllNoiseBandwidth     = 2;         % [Hz]
+% settings.pllNoiseBandwidth     = 2;           % [Hz]
 settings.pllNoiseBandwidth       = 15;          %[Hz]
 settings.intTime                 = 0.001;       % [s]
 % CNo Settings
